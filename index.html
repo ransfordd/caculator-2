@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <section>
+      
+        <div class="whole">
+          <input id="display" readonly>
+          <div class="calc">
+            <button onclick="clearDisplay()" class="nice">AC</button>
+            <button onclick="appendTodisplay('%')" class="nice">%</button>
+            <button onclick="appendTodisplay('**')" class="nice">pw</button>
+            <button onclick="appendTodisplay('/')" class="yell">÷</button>
+            <button onclick="appendTodisplay('7')">7</button>
+            <button onclick="appendTodisplay('8')">8</button>
+            <button onclick="appendTodisplay('9')">9</button>
+            <button onclick="appendTodisplay('*')" class="yell">x</button>
+            <button onclick="appendTodisplay('4')">4</button>
+            <button onclick="appendTodisplay('5')">5</button>
+            <button onclick="appendTodisplay('6')">6</button>
+            <button onclick="appendTodisplay('-')" class="yell">-</button>
+            <button onclick="appendTodisplay('1')">1</button>
+            <button onclick="appendTodisplay('2')">2</button>
+            <button onclick="appendTodisplay('3')">3</button>
+            <button onclick="appendTodisplay('+')" class="yell">+</button>
+            <button onclick="clearEntry()">DEL</button>
+            <button onclick="appendTodisplay('0')">0</button>
+            <button onclick="appendTodisplay('.')" id="stop" value=".">.</button>
+            <button onclick="calculate()" class="yell">=</button>
+          </div>
+        </div>
+      </section>
+
+    
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
